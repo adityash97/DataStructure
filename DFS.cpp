@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
 void DFS(int G[][7],int start,int size);
-int G[7][7] ={
+
+int main(){
+    int G[7][7] ={
         {0,0,0,0,0,0,0},
         {0,0,1,1,0,0,0},
         {0,1,0,0,1,0,0},
@@ -9,7 +11,6 @@ int G[7][7] ={
         {0,0,1,1,0,1,1},
         {0,0,0,0,1,0,0},
         {0,0,0,0,1,0,0}};
-int main(){
     
     DFS(G,1,7);
 }
