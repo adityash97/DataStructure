@@ -12,8 +12,6 @@ using namespace std;
 void deathCircle(vector <int> &josephus,int k,int index,int &ans){
     if(josephus.size() == 1){
         ans = josephus[0];
-        josephus.pop_back();
-
         return ;
     }
     index = (index+k)%josephus.size();
